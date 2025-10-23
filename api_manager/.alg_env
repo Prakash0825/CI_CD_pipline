@@ -1,0 +1,2 @@
+db_urls={"postgres_async": ["postgresql+asyncpg://localhost:5432/vms?user=postgres&password=Algofusion"], "redis": ["redis://localhost:6379"]}
+import_paths={"base_path": "/Users/algofusion/Documents/GitHub/ci_cd_learning/ci_cd_learning", "api_manager": "/Users/algofusion/Documents/GitHub/ci_cd_learning/ci_cd_learning/api_manager","orchestrator":"/Users/algofusion/Documents/GitHub/ci_cd_learning/ci_cd_learning/orchestrator","api_ai_alerts": "/Users/algofusion/Documents/GitHub/ci_cd_learning/ci_cd_learning/api_ai_alerts"}
