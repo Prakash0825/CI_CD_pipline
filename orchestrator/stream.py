@@ -3,7 +3,7 @@ import asyncio
 
 class Stream:
     def __init__(self):
-        self.mapping = {"csv":pl.read_csv, "json":pl.read_json,"excel":pl.read_excel}
+        self.mapping = {"csv":pl.read_csv, "json":pl.read_json,"xlsx":pl.read_excel}
         self.filter_mapping = {"equals":"==", "not_equals":"!=", "greater_than":">", "less_than":"<"}
        
     async def read_data(self, file_path: str) -> pl.DataFrame:
