@@ -2,3 +2,4 @@ pytest
 polars
 pydantic
 fastapi
+httpx
