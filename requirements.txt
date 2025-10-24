@@ -1,0 +1,4 @@
+pytest
+polars
+pydantic
+fastapi

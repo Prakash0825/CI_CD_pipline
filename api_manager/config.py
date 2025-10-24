@@ -4,7 +4,7 @@ import json
 from typing import Dict, Any, Optional
 
 class Config:
-    def __init__(self, env_file_path: str = ".alg_env"):
+    def __init__(self, env_file_path: str = "api_manager/.alg_env"):
         self.env_file_path = env_file_path
         self.db_urls = {}
         self.import_paths = {}
