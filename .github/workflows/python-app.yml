@@ -45,3 +45,10 @@ jobs:
         run: |
           echo "Deploying to production..."
           echo "Deployed to production successfully!"
+          ssh -i ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} 
+          cd ${{ secrets.SOURCE_DIRECTORY }}
+          git pull git@github.com:Prakash0825/CI_CD_pipline.git main
+          pip install -r requirements.txt
+          python apimanager/main.py
+          echo "Deployment completed successfully!"
+
