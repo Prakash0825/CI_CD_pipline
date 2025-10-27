@@ -58,7 +58,7 @@ jobs:
           ssh -i deploy_key.pem ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << 'EOF'
             cd ${{ secrets.SOURCE_DIRECTORY }}
             git pull origin main
-            . /opt/DATA/prod_env/bin/activate
+            source /opt/DATA/prod_env/bin/activate
             sudo pip install -r requirements.txt
             echo "Deployment completed successfully!"
           EOF
