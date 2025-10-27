@@ -43,7 +43,7 @@ jobs:
     steps:  
       - name: Deploy to production
         run: |
-          echo "Deploying to production..."
+          echo "Deploying  to production..."
           echo "Deployed to production successfully!"
           ssh -i ${{ secrets.PEM_KEY }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} 
           cd ${{ secrets.SOURCE_DIRECTORY }}
