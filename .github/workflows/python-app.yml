@@ -37,3 +37,10 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
+  deploy:
+    runs-on: ubuntu-latest
+    steps:  
+      - name: Deploy to production
+        run: |
+          echo "Deploying to production..."
+          echo "Deployed to production successfully!"

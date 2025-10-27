@@ -44,6 +44,7 @@ async def filter_data(unique_id: str,item : Items):
     df = await stream.read_data(file_path)
     df = await stream.filter_data(df, item.filter_column, item.filter_value, item.filter_type)
     df = df.to_pandas()
+    print("Task Done")
     return {"message": "file uploaded successfully", "data": df.to_dict(orient='records')}
 
     
