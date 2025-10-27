@@ -57,6 +57,7 @@ jobs:
           echo "Deploying  to production..."
           ssh -i deploy_key.pem ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << 'EOF'
             cd ${{ secrets.SOURCE_DIRECTORY }}
+            sudo su 
             git pull origin main
             source /opt/DATA/prod_env/bin/activate
             sudo pip install -r requirements.txt
