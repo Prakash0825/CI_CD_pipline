@@ -54,7 +54,7 @@ jobs:
 
       - name: Deploy to production
         run: |
-          echo "Deploying  to production..."
+          echo "Deploying to production..."
           ssh -i deploy_key.pem ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << 'EOF'
             cd ${{ secrets.SOURCE_DIRECTORY }}
             git pull origin main
